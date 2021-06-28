@@ -1,4 +1,4 @@
-alert("KK");
+alert("Q");
 
 var video, canvas, se
 
@@ -9,6 +9,19 @@ const constraints = {
     facingMode: { exact: "environment" }  // リアカメラを利用する場合
   }
 };
+
+
+  navigator.mediaDevices.getUserMedia(constraints)
+  .then( (stream) => {
+    video.srcObject = stream;
+    video.onloadedmetadata = (e) => {
+      video.play();
+    };
+  })
+  .catch( (err) => {
+    console.log(err.name + ": " + err.message);
+  });
+
 
 function shutter(){
   video  = document.querySelector("#camera");
