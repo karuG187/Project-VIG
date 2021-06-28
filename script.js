@@ -1,3 +1,6 @@
+navigator.mediaDevices.getUserMedia({video: true})
+
+/*
 const medias = {
   audio: false,
   video: {
@@ -19,3 +22,4 @@ function successCallback(stream) {
 function errorCallback(err) {
   alert(err);
 };
+*/
