@@ -1,1 +1,1 @@
-console.log(VIGVIG);
+console.log("VIGVIG");
