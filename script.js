@@ -1,4 +1,4 @@
-alert("HAHAHA");
+alert("www");
 window.onload = () => {
   const video  = document.querySelector("#camera");
   const canvas = document.querySelector("#picture");
@@ -8,10 +8,10 @@ window.onload = () => {
   const constraints = {
     audio: false,
     video: {
-      width: 300,
-      height: 200,
-      facingMode: "user"   // フロントカメラを利用する
-      // facingMode: { exact: "environment" }  // リアカメラを利用する場合
+      width: { min: 800, ideal: 1280, max: 1920 }
+      height: { min: 600, ideal:  720, max: 1080 },
+      //facingMode: "user"   // フロントカメラを利用する
+      facingMode: { exact: "environment" }  // リアカメラを利用する場合
     }
   };
 
