@@ -4,11 +4,11 @@ const medias = {
   video: {
     facingMode: {
       exact: "environment" // リアカメラにアクセス
-    }
+    },
     height: {
       min: 100
       max: 300
-    }
+    },
     width: {
       min: 100
       max: 300
