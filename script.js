@@ -6,11 +6,11 @@ const medias = {
       exact: "environment" // リアカメラにアクセス
     },
     height: {
-      min: 100
+      min: 100,
       max: 300
     },
     width: {
-      min: 100
+      min: 100,
       max: 300
     }
   }
