@@ -1,4 +1,4 @@
-alert("www");
+alert("lol");
 window.onload = () => {
   const video  = document.querySelector("#camera");
   const canvas = document.querySelector("#picture");
@@ -20,6 +20,7 @@ window.onload = () => {
   /**
    * カメラを<video>と同期
    */
+  /*
   navigator.mediaDevices.getUserMedia(constraints)
   .then( (stream) => {
     video.srcObject = stream;
@@ -30,6 +31,7 @@ window.onload = () => {
   .catch( (err) => {
     console.log(err.name + ": " + err.message);
   });
+  */
 
   /**
    * シャッターボタン
