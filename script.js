@@ -1,1 +1,1 @@
-console.log("VIGVIG");
+alert(123);
