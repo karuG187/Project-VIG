@@ -1,3 +1,5 @@
+console.log("HAHAHA");
+
 window.onload = () => {
   const video  = document.querySelector("#camera");
   const canvas = document.querySelector("#picture");
