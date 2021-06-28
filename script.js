@@ -1,17 +1,17 @@
-console.log("HAHAHA");
-
+alert("HAHAHA");
 window.onload = () => {
   const video  = document.querySelector("#camera");
   const canvas = document.querySelector("#picture");
+  const se     = document.querySelector('#se');
 
-  //カメラ設定
+  /** カメラ設定 */
   const constraints = {
     audio: false,
     video: {
       width: 300,
       height: 200,
-      //facingMode: "user"   // フロントカメラを利用する場合
-      facingMode: { exact: "environment" }  // リアカメラを利用する場合
+      facingMode: "user"   // フロントカメラを利用する
+      // facingMode: { exact: "environment" }  // リアカメラを利用する場合
     }
   };
 
@@ -37,6 +37,7 @@ window.onload = () => {
 
     // 演出的な目的で一度映像を止めてSEを再生する
     video.pause();  // 映像を停止
+    se.play();      // シャッター音
     setTimeout( () => {
       video.play();    // 0.5秒後にカメラ再開
     }, 500);
@@ -45,7 +46,6 @@ window.onload = () => {
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
   });
 };
-
 
 /*
 const medias = {
