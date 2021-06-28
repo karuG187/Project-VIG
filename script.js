@@ -1,11 +1,17 @@
-navigator.mediaDevices.getUserMedia({video: true})
 
-/*
 const medias = {
   audio: false,
   video: {
     facingMode: {
       exact: "environment" // リアカメラにアクセス
+    }
+    height: {
+      min: 100
+      max: 300
+    }
+    width: {
+      min: 100
+      max: 300
     }
   }
 };
@@ -22,4 +28,4 @@ function successCallback(stream) {
 function errorCallback(err) {
   alert(err);
 };
-*/
+
